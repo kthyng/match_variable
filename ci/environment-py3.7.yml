@@ -1,0 +1,15 @@
+name: test_env_match_variable
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  ############## These will have to be adjusted to your specific project
+  - pandas
+  - re
+  - xarray
+  ##############
+  - pytest
+  - pip:
+    - codecov
+    - pytest-cov
+    - coverage[toml]
